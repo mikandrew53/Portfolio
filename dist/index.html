@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/main.css" />
+  <title>Andrew Mikaeel | Software Engineer</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header id="header-home">
+    <div class="container">
+      <nav id="main-nav">
+        <img src="./img/AM-Logo.png" alt="My Portfolio" id="logo" />
+        <ul>
+          <li id="about-btn"><a href="#about-section">About</a></li>
+          <li id="technologies-btn"><a href="#home-c">Technologies</a></li>
+          <li id='projects-btn'><a href="#home-my-work">Projects</a></li>
+          <li><a href="https://github.com/mikandrew53/" target="_blank">Github</a></li>
+        </ul>
+      </nav>
+      <div class="header-content">
+        <h1>I Am Andrew The <span class="txt-type" data-wait="3000" data-words='["Developer, Coder, Tech Head..."]'></span></h1>
+        <a href="#home-my-work" class="btn-light" id="view-projects-btn">View My Projects</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Section A: Specialize -->
+  <section id="home-a" class="text-center py-2">
+    <div class="container">
+      <h2 class="section-title" id="about-section">About Me</h2>
+      <div class="bottom-line"></div>
+      <div id="about-me">
+        <p>I am currently a second year software engineering student who is immensely passionate about software. My current goal is to learn as much as possible about development by surrounding myself with experienced software engineers. I love building things, and dream about being involved in the development of a production grade application!</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="home-c" class="text-center py-2"> 
+    <div class="container">
+      <h2 class="section-title">I Specialize In</h2>
+      <div class="bottom-line"></div>
+      <!-- <p class="lead">Javascript, HTML, and CSS</p> -->
+      <div class="specials">
+        <div>
+          <i class="fab fa-html5 fa-3x" style="color: #E44D26;"></i>
+          <h3>html5</h3>
+
+        </div>
+        <div>
+          <i class="fab fa-js fa-3x" style="color: #f8DE1D;" id="JavaScript"></i>
+          <h3>JavaScript</h3>
+        </div>
+        <div>
+          <i class="fab fa-css3-alt fa-3x" style="color: #2299F8;"></i>
+          <h3>css</h3>
+        </div>
+      </div>
+    </div>
+    <h3 class="section-title">I Have Experience In</h3>
+    <div class="bottom-line"></div>
+    <div class="stats">
+      <div>
+        <ul>
+          <li><i class="fab fa-java fa-3x"></i></li>
+          <!-- <li><i class="fas fa-users fa-3x"></i></li> -->
+          <li class="stats-title">Java</li>
+        </ul>
+      </div>
+      <div>
+
+        <ul>
+          <li><i class="fab fa-php fa-3x"></i></li>
+          <li class="stats-title">PHP</li>
+        </ul>
+      </div>
+       <div>
+        <ul>
+          <li><i class="fas fa-database fa-3x"></i></li>
+          <li class="stats-title">MySQL</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li><i class="fab fa-sass fa-3x"></i></li>
+          <li class="stats-title">Sass</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li><i class="fab fa-bootstrap fa-3x"></i></li>
+          <li class="stats-title">Bootstrap</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li><i class="fab fa-git-alt fa-3x"></i></li>
+          <li class="stats-title">Git</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section C: Process -->
+  <section id="home-my-work" class="text-center py-2">
+    <div class="container">
+      <h2 class="section-title">My Projects</h2>
+      <div class="bottom-line"></div>
+      <p class="lead">Here is a look at my personal Projects</p>
+      <div class="process">
+        <div>
+          <i class="fas fa-sort-numeric-down fa-4x process-icon my-2" id="sort"></i>
+          <h3>Sorting Algorithm Visualizer</h3>
+          <p class="project-tech">JavaScript, HTML5, Sass</p>
+        </div>
+        <div>
+          <i class="fas fa-cloud-sun-rain fa-4x process-icon my-2" id="weather"></i>
+          <h3>Weather App</h3>
+          <p class="project-tech">JavaScript, HTML5, CSS, Bootstrap</p>
+        </div>
+        <div>
+          <i class="fas fa-shopping-cart fa-3x process-icon my-2" id="shop"></i>
+          <h3>Online Shopping store</h3>
+          <p class="project-tech">JavaScript, HTML5, Sass</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="modal">
+    <div class="modal-header">
+      <div class="title">Example Modal</div>
+      <button class="close-button" id="close-modal">&times;</button>
+    </div>
+    <div class="modal-body">
+    </div>
+  </div>
+  <div class="overlay"></div>
+
+  <!-- Type Effect Tutorial: https://www.youtube.com/watch?v=POX3dT-pB4E -->
+  <script src="js/typewriter.js"></script>
+  <script src="./js/smoothScroll.js"></script>
+  <script src="./js/ui.js"></script>
+  <script src="./js/app.js"></script>
+
+  
+</body>
+
+</html>

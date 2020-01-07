@@ -1,0 +1,132 @@
+.container {
+  // width: $website-width;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+// Buttons
+%btn-shared {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn {
+  &-main {
+    @extend %btn-shared;
+    color: #333;
+    background-color: $main-color;
+  }
+  &-light {
+    @extend %btn-shared;
+    color: #333;
+    background-color: $light-color;
+  }
+  &-dark {
+    @extend %btn-shared;
+    color: #f4f4f4;
+    background-color: $dark-color;
+  }
+}
+ 
+/* button[class^="btn-"]: any button with the class btn-''
+   a[class^="btn-"]: any links with the class btn-''
+   input[class^="btn-"]: any input with the class btn-'' */
+button[class^="btn-"]:hover,
+a[class^="btn-"]:hover,
+input[class^="btn-"]:hover {
+  background-color: $main-color;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+// Padding
+.py {
+  &-1 {padding: 1rem 0;}
+  &-2 {padding: 2rem 0;}
+  &-3 {padding: 3rem 0;}
+  &-4 {padding: 4rem 0;}
+}
+
+.section-title{
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.bottom-line{
+  height: 2px;
+  width: 3rem;
+  background-color: $main-color;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+.modal{
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: #fff;
+  width: 600px;
+  max-width: 80%;
+  text-align: center;
+  &-header{
+    padding: 0.5rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    .title{
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+    .close-button{
+      cursor: pointer;
+      border: none;
+      outline: none;
+      background: none;
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+  }
+  &-body{
+    padding: 0.5rem 1.5rem;
+    .btn-dark{ 
+      margin-bottom: 0.5rem;
+      padding: 0.5rem 4rem;
+      margin-left: 1rem;
+    }
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.overlay{
+  display: none;
+  position: fixed;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:rgba(0,0,0,0.5);
+  pointer-events: all;
+}

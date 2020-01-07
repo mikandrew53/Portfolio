@@ -1,0 +1,146 @@
+@import "config";
+@import "utilities";
+@import "reset";
+
+// Logo
+#logo {
+  width: 70px;
+  height: 70px;
+}
+// Main Nav
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+
+  ul {
+    display: flex;
+
+    li {
+      padding: 1rem 1.5rem;
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        border-bottom: 3px transparent solid;
+        padding-bottom: 0.5rem;
+        transition: border-color 0.5s;
+
+        &:hover {
+          border-color: $medium-color;
+        }
+
+        &.current {
+          border-color: $main-color;
+        }
+      }
+    }
+  }
+}
+
+// Header
+#header {
+  // Header Home
+  &-home {
+    background: $background-image no-repeat center center/ cover;
+    height: 100vh;
+    color: #fff;
+
+    // Header Content
+    .header-content {
+      text-align: center;
+      padding-top: 10%;
+      #view-projects-btn{margin-top: 1rem;}
+      h1 {
+        font-size: 4rem;
+        line-height: 1.2;
+      }
+    }
+  }
+    &-inner {
+    }
+}
+
+// Home Sections
+#home{
+  // Home Section A
+  &-a{
+    #about-me{
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+    .specials{
+      margin-top: 3rem;
+      display: grid;
+      grid-gap: 1rem;
+      grid-template-columns: repeat(3, 1fr);
+      .fas {padding-bottom: 0.4rem;}
+    }
+  }
+  // Home Section B
+  &-c {
+    .specials{
+      margin-top: 3rem;
+      display: grid;
+      grid-gap: 1rem;
+      padding-bottom: 2rem;
+      grid-template-columns: repeat(3, 1fr);
+      // .fas {padding-bottom: 0.4rem;}
+    }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      li{
+        line-height: 2;
+        &.stats-title{font-size: 1.5rem}
+        &.stats-number{
+          font-size: 1.5rem;
+          font-weight: bold;
+        }  
+      }
+      div{
+        padding: 3rem 0;
+
+        &:nth-child(odd){background-color: $light-color;}
+        &:nth-child(even){background-color: $medium-color;}
+      }
+    }
+  }
+
+  &-my-work{
+    .process{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap:1.5rem;
+      text-align: center;
+      .project-tech{
+        padding-top: 0.5rem;
+        // font-weight: bold;
+        color: $main-color;
+      }
+      &-icon{
+        border-radius: 50%;
+        background-color: $dark-color;
+        color: #fff;
+        padding: 2rem;
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        text-align: center;
+        // position: relative;
+        transition: all 1s;
+
+        &:hover {
+          cursor: pointer;
+          background-color: $main-color;
+          width: 90px;
+          height: 90px;
+          line-height: 90px;
+        }
+      }
+    }
+
+  }
+}
