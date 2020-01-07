@@ -3,18 +3,21 @@ class UI {
         this.sort = {
             description: '<p>Built an application that visualizes popular sorting algorithms. I implemented merge sort, quick sort, and bubble sort. Spacetime complexity was kept in mind when writing the algorithms.</p>',
             github: 'https://github.com/mikandrew53/Sorting-Visualizer',
-            header: 'Sorting Visualizer'
+            header: 'Sorting Visualizer',
+            demo: 'https://xenodochial-kare-dde6be.netlify.com/'
 
         };
         this.weather = {
             description: '<p>Built a weather app to display current and past weather for various cities using the ‘metaweather’ api. The app is optimized o make the minimum amount of http requests in order to decrease traffic on the backend server.</p>',
             github: 'https://github.com/mikandrew53/Weather-App',
-            header: 'Weather App'
+            header: 'Weather App',
+            demo: 'https://nervous-lamarr-1e19ac.netlify.com'
         }
         this.shop = {
             description: '<p>Built an online store that with a dynamically updating shopping cart. Implemented a rounding class to round the cost of the items in the cart</p>',
             github: 'https://github.com/mikandrew53/Online-Shoping-Store',
-            header: 'Online Shopping Store'
+            header: 'Online Shopping Store',
+            demo: ''
         }
         this.sortingModal = document.getElementById('sorting-modal');
         this.sortLink = '#';
@@ -39,7 +42,7 @@ class UI {
         document.querySelector('.modal-body').innerHTML = `
         <div>${project.description}</div>
         <div class = modal-btn>
-            <a href="" class="btn-dark" target="_blank">Live Demo</a>
+            <a href="${project.demo}" class="btn-dark" target="_blank">Live Demo</a>
             <a href="${project.github}" class="btn-dark" target="_blank">Source Code</a>
         </div>`;
     }
