@@ -17,12 +17,8 @@ class UI {
             description: '<p>Built an online store that with a dynamically updating shopping cart. Implemented a rounding class to round the cost of the items in the cart</p>',
             github: 'https://github.com/mikandrew53/Online-Shoping-Store',
             header: 'Online Shopping Store',
-            demo: ''
+            demo: 'https://silly-cori-c0bbc8.netlify.com/'
         }
-        this.sortingModal = document.getElementById('sorting-modal');
-        this.sortLink = '#';
-        this.weatherLink = '#';
-        this.shopLink = '#';
     }
 
     paintModal(projectName){
